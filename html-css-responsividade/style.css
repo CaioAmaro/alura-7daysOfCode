@@ -65,6 +65,16 @@ section h2 {
     padding: 0.5em 0em 1em 1em;
 }
 
+.lista-dia-consulta__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-dia-consulta__item h2{
+    align-self: start;
+}
+
 .lista-dia-consulta li.lista-dia-consulta__item:nth-last-child(1){
     font-size: 1.6rem;
     margin-bottom: 5em;
@@ -75,6 +85,7 @@ section h2 {
     margin: 0em 1em 1em 1em;
     background-color: var(--cor-background-card);
     border-radius: 8px;
+    max-width: 309.483px;
 }
 
 .card-consulta-superior{
@@ -224,9 +235,6 @@ footer div img{
     border-radius: 8px;
     color: var(--cor-titulo);
 }
-
-
-
 
 .fundo-bloqueado{
     display: none;

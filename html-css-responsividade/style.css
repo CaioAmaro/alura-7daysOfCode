@@ -1,7 +1,7 @@
 :root{
     font-size: 62.5%;
-    --font: "Montserrat";
-    --background: #F8F4FF;
+    --font: "Montserrat", sans-serif;
+    --background: #f8f4ff;
     --cor-background-card: #fdfdfd;
     --cor-horario-bar: #333333;
     --cor-titulo: #464646;
@@ -63,6 +63,11 @@ section h2 {
     font-weight: 700;
     color: var(--cor-titulo);
     padding: 0.5em 0em 1em 1em;
+}
+
+.lista-dia-consulta li.lista-dia-consulta__item:nth-last-child(1){
+    font-size: 1.6rem;
+    margin-bottom: 5em;
 }
 
 .card-consulta{
@@ -148,6 +153,70 @@ section h2 {
     margin-bottom: 1em;
 }
 
+.botoes-flutuantes{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10vh;
+    right: 0vh;
+    border: 1px solid red;
+}
+
+.botoes-flutuantes div{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.botoes-flutuantes div span{
+    font-size: 1.2rem;
+    color: var(--cor-titulo);
+    background-color: var(--background);
+    padding: 0.4em;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+
+.fundo-bloqueado{
+    display: none;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #3333339b;
+}
+
+footer{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-background-card);
+    padding: 1em;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    position: fixed;
+    bottom: 0vh;
+    left: 0vh;
+    right: 0vh;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--cor-subtitulo);
+    gap: 0.5em;
+}
+
+footer div img{
+    width: 20px;
+    height: 20px;
+}
 
 
 

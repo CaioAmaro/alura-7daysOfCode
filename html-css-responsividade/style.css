@@ -85,7 +85,7 @@ section h2 {
     margin: 0em 1em 1em 1em;
     background-color: var(--cor-background-card);
     border-radius: 8px;
-    max-width: 309.483px;
+    min-width: 309.483px;
 }
 
 .card-consulta-superior{
@@ -246,6 +246,22 @@ footer div img{
     background-color: #3333339b;
 }
 
+
+@media screen and (min-width: 768px){
+    .lista-consultas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .lista-consultas{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
 
 
 

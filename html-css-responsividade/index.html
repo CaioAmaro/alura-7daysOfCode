@@ -32,8 +32,10 @@
                 <h2>Olá, Sônia</h2>
                 <span>Mais 4 consultas hoje</span>
             </div>
+            
         </div>
     </header>
+    
     <main>
         <section>
             <ul class="lista-dia-consulta">
@@ -292,6 +294,38 @@
             </ul>
         </section>
     </main>
+    
+    <section class="formulario">
+    
+        <form>
+            <h2>Marcar Nova Consulta</h2>
+            <div>
+                <label>Nome do Paciente:</label>
+                <input type="text" name="nome-paciente" id="nome-paciente">
+            </div>
+            <div>
+                <label>Tipo de Consulta:</label>
+                <select id="tipo-consulta">
+                    <option disabled value="">Selecione</option>
+                    <option>Consulta Remota</option>
+                    <option>Consulta Local</option>
+                </select>
+            </div>
+            <div>
+                <label>Data da Consulta:</label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label>Horario da Consulta:</label>
+                <input type="time" id="horas">
+            </div>
+            <div>
+                <label>Observações:</label>
+                <textarea></textarea>
+            </div>
+            <button type="submit">Marcar Consulta</button>
+        </form>
+    </section>
     <footer>
         <div>
             <img src="./img/icons-footer/calendario.svg">
@@ -310,7 +344,7 @@
             <span>Menu</span>
         </div>
     </footer>
-   
+    
     <section class="botoes-flutuantes">
         <input type="checkbox" id="botao-menu">
         <div class="botao-principal">

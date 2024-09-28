@@ -58,6 +58,10 @@ header{
     color: var(--cor-subtitulo);
 }
 
+.formulario{
+    display: none;
+}
+
 section h2 {
     font-size: 1.6rem;
     font-weight: 700;
@@ -315,6 +319,45 @@ footer div img{
         
     }
 
+    form{
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+        margin-left: 40%;
+        align-items: start;
+        gap: 1em;
+        padding: 1em;
+        border: 5px inset var(--cor-subtitulo);
+    }
+
+    form h2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    form div{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        align-items: center;
+        gap: 1em;
+    }
+
+    form button{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .formulario{
+        display: block;
+    }
+
+    .botoes-flutuantes{
+        display: none;
+    }
 }
 
 
